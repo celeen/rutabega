@@ -1,0 +1,31 @@
+header {
+  // background-color: green;
+  background: url('../images/picnic.jpg') repeat;
+  width: 100%;
+  // height: 120%;
+  padding-bottom: 17%;
+  // margin-top: 7%;
+  img { 
+    margin-top: 1%;
+    @include span-columns(3);
+    @include shift(1);
+  }
+  h1 {color: white;}
+}
+section {
+  background-color: yellow;
+  width: 100%;
+  // padding-top: 5%;
+  overflow: visible;
+  // @include span-columns(10);
+  // @incldue shift(2);
+  
+  nav {
+    position: relative;
+    margin-top: .5%;
+    @include span-columns(8);
+    // @include shift(4);
+    li {display: inline-block;}
+    a {@include span-columns(2 of 8);}
+  }
+}
