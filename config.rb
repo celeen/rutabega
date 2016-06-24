@@ -46,6 +46,8 @@
 #     "Helping"
 #   end
 # end
+require "lib/custom_helpers"
+helpers CustomHelpers
 
 activate :s3_sync do |thing|
   thing.bucket                 = 'pilsenmarket.org'
